@@ -1,83 +1,59 @@
-body {
-  background-color: #fbd81f;
-}
-.layout {
-  /*padding: 0px 20%;*/
-  width: 50%;
-  margin: 0 auto;
+* {
   box-sizing: border-box;
 }
+
 h1 {
-  font-size: 3em;
+  margin: 50px 70px;
+  font-weight: bold;
+  font-size: 40px;
 }
 
-input,
-button {
-  height: 40px;
+body {
+  background-color: #fbd81f;
+  font-family: "Lato", sans-serif;
+  color: #000000;
+}
+
+input::placeholder {
+  color: #d3d3d3;
+}
+
+input:focus {
+  outline: none;
 }
 
 input {
-  width: 90%;
-  padding-left: 4%;
-  color: #808080;
-  font-size: 20px;
-  font-family: arial;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 17px;
+  float: left;
   border: 1px solid #d3d3d3;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  margin-bottom: 5px;
-  box-sizing: border-box;
-}
-
-/*form input {
-  color: red;
-}*/
-
-::placeholder {
-  color: #d3d3d3;
-  opacity: 1; /* Firefox */
-}
-
-button {
-  width: 10%;
-  background-color: #45c39f;
-  border: 0.01px solid;
-  font-size: 20px;
-  color: white;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-sizing: border-box;
-}
-
-.list {
-  width: 500px;
-  background-color: white;
-  padding: 5% 5% 5% 5%;
-  border-radius: 15px;
-  /*box-sizing: border-box;*/
+  border-radius: 5px 0px 0px 5px;
+  width: 83%;
+  color: #808080;
+  /* margin-bottom: 20px; */
 }
 
 ul {
-  list-style-type: none;
-  font-family: Lato;
-  font-size: 20px;
-  padding-left: 2%;
+  padding: 30px;
 }
 
-li {
-  margin: 1em 0;
-  height: 50px;
-  border-radius: 25px;
-  padding-top: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+button {
+  background-color: #45c39f;
+  font-size: 17px;
+  float: left;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+  width: 10%;
 }
 
 li:hover {
   background-color: #f7f7f7;
+  border-radius: 15px;
 }
 
 li i {
@@ -85,8 +61,30 @@ li i {
 }
 
 li:hover i {
-  color: #ff8c69;
   visibility: visible;
+  color: #ff8c69;
+}
+
+li {
+  padding: 5px;
+  font-size: 25px;
+  margin: 10px;
+  margin-right: 0px;
+}
+
+.fa-minus-circle {
+  float: right;
+}
+.layout {
+  width: 100%;
+}
+
+.list {
+  background-color: white;
+  margin: 50px 100px;
+  padding: 40px 40px;
+  border-radius: 20px;
+  padding-right: 0px;
 }
 
 .done {
